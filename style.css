@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #777;
+}
+
+.wrapper {
+  width: 500px;
+  padding: 0;
+  margin: auto;
+  border: 3px solid #fff;
+  background-color: #fff;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.fad-in {
+  opacity: 0;
+  animation: fadIn 0.5s ease-in-out 1 forwards;
+}
+
+@keyframes fadIn {
+  to {
+    opacity: 1;
+  }
+}
